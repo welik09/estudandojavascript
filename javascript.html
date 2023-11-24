@@ -1,0 +1,91 @@
+<script>
+//funçoes
+
+ function testes(){
+//exeutado quando chmar a funçao
+console.log('chamando a funçao testes');
+    }
+function testes2(nome,idade){
+  console.log('o nome e :'+nome);
+ console.log(" a idade e : "+idade)
+}
+testes2("welik",23);
+testes2("carlos",25);
+
+//
+function pegarNome(){
+ return "welik,carlos";
+}
+
+var nome = pegarNome();
+console.log(nome)
+
+
+//
+function pegarNome(parametro){
+ if(parametro == 1){
+return "welik"
+ }else{
+return "carlos"
+ }
+
+ }
+var nome = pegarNome(2);
+console.log(nome);
+
+//outra parte 
+var fun = function(){
+    alert("ola mundo")
+}
+fun();
+
+(function(){
+    alert("ola mundo");
+})();
+
+// mais funçoes
+var func = function(){
+    alert("ola mundo")
+}
+
+func();
+//
+(function(){
+    alert('ola welik');
+})();
+//
+
+//repetiçao
+var n = 0;
+while(n < 10){
+    //execute o codigo
+  console.log(n);
+    n++
+}
+
+for(var i = 0; i < 10;i++){
+  console.log(i);
+}
+
+var m = 0;
+do{
+ console.log(m);
+ m++;
+}while(m < 20 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+   
