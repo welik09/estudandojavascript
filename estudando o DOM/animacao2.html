@@ -1,0 +1,64 @@
+<html>
+    <body>
+        <style>
+            .conteudo h2 span{
+                font-size: 13px;
+                cursor: pointer;
+            }
+            .conteudo p{
+                overflow: hidden;
+                height: 10px;
+                transition: 1s;
+            }
+
+            .mostrar{
+                height: 200px !important;
+            }
+
+
+        </style>
+        <div class="conteudo">
+            <h2>titulo do conteudo <span>ver mais!</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Ea earum, velit eum dolores accusantium odit dolorum quibusdam 
+            est vero consequuntur quo placeat, nostrum ab tempora aliq
+            Ea earum, velit eum dolores accusantium odit dolorum quibusdam 
+            est vero consequuntur quo placeat, nostrum ab tempora aliqEa earum, velit eum dolores accusantium odit dolorum quibusdam 
+            est vero consequuntur quo placeat, nostrum ab tempora aliq
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Ea earum, velit eum dolores accusantium odit dolorum quibusdam 
+            est vero consequuntur quo placeat, nostrum ab tempora aliq
+            Ea earum, velit eum dolores accusantium odit dolorum quibusdam 
+            est vero consequuntur quo placeat, nostrum ab tempora aliqEa earum, velit eum dolores accusantium odit dolorum quibusdam 
+            est vero consequuntur quo placeat, nostrum ab tempora aliq
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Ea earum, velit eum dolores accusantium odit dolorum quibusdam 
+            est vero consequuntur quo placeat, nostrum ab tempora aliq
+            Ea earum, velit eum dolores accusantium odit dolorum quibusdam 
+            est vero consequuntur quo placeat, nostrum ab tempora aliqEa earum, velit eum dolores accusantium odit dolorum quibusdam 
+            est vero consequuntur quo placeat, nostrum ab tempora aliq</p>
+
+        </div>
+        <script>
+
+            var span = document.querySelector('.conteudo span');
+
+             span.addEventListener('click',function(){
+               var conteudo = document.querySelector('.conteudo p');
+
+              if(conteudo.classList.contains('mostrar')){
+                span.innerHTML = 'ver mais';
+                conteudo.classList.remove('mostrar');
+                  
+               }else{
+                span.innerHTML = 'ocultar';
+                conteudo.classList.add('mostrar');
+                
+               }
+            });
+
+             
+            
+        </script>
+    </body>
+</html>
