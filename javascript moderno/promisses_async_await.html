@@ -3,6 +3,66 @@
         
         <script>
             
+
+            function testes(){
+                return new Promise(function(resolve,reject){
+
+                    const erro = false;
+                    if(erro){
+                        reject('erro...');
+                    }else{
+                        resolve('a promise foi resolvida');
+                    }
+                })
+            }
+
+            testes().then(function(res){
+                alert(res);
+            }).catch(function(err){
+                alert(err);
+            })
+
+//
+
+function testes(){
+                return new Promise(function(resolve,reject){
+                 setTimeout(function(){
+                    const erro = false;
+                    if(erro){
+                        reject('erro...');
+                    }else{
+                        resolve('a promise foi resolvida');
+                    }
+                },5000)
+
+                 })
+                    
+            }
+
+            async function testes2(){
+                await testes().then(function(res){
+                    alert(res)
+                });
+                alert('ola');
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </script>
     </body>
 </html>
