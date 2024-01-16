@@ -1,0 +1,35 @@
+<html>
+    <body>
+        
+        <script>
+
+//spread
+
+var nomes = [
+    {
+         nome : 'welik'
+    },
+    {
+        nome: 'carlos'
+    }
+]
+
+const objetos = [...nomes,{
+    nome:'luiz'
+}]
+            
+console.log(objetos);
+
+//rest
+
+function testes(...nomes){
+    console.log(nomes);
+}
+
+testes(1,2,3,4,5,6,7,8,9,{nome:'welik'});
+
+
+
+        </script>
+    </body>
+</html>
